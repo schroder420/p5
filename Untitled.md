@@ -396,7 +396,68 @@ Regler:
 - Komponentnavne skal være tydelige
 - Komponenter må gerne kombineres med effektklasser
 
-## 11. Performance
+
+## 11. Mobile First
+
+Projektet arbejder som udgangspunkt med mobile first.
+
+Det betyder, at basis-CSS skrives til den mindste skærm først. Derefter tilføjes styling til større skærme med media queries.
+
+**Godt:**
+
+```css
+.project-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.project-card {
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card {
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+```
+
+**Dårligt:**
+
+```css
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+```
+
+Regler:
+
+- Start med mobil-layout som standard
+- Brug `min-width` media queries til større skærme
+- Undgå at bygge desktop først og “rette ned” bagefter
+- Undgå faste højder, hvis indholdet kan variere
+- Test layout på både mobil, tablet og desktop
+- Interaktive elementer skal have nok klik-/trykflade på mobil
+
+
+## 12. Performance
 
 Performance handler om at undgå unødvendig belastning, især ved billeder, video og JavaScript.
 
@@ -450,7 +511,7 @@ const menu = document.querySelector("#menu");
 menu.classList.add("is-open");
 ```
 
-## 12. Accessibility
+## 13. Accessibility
 
 Accessibility betyder, at siden skal kunne bruges af så mange som muligt.
 
@@ -471,7 +532,7 @@ Viewport standard:
 
 Hvis viewport ændres af designmæssige årsager, skal det være et bevidst valg og ikke en standardløsning.
 
-## 13. Do / Don’t
+## 14. Do / Don’t
 
 ### HTML
 
@@ -515,7 +576,47 @@ let x = document.querySelector(".x");
 const submitButton = document.querySelector("#submitButton");
 ```
 
-## 14. Review Rules
+## 15. Commit-struktur
+
+Commits skal være korte og konkrete, så det er nemt at forstå, hvad der er ændret i projektet.
+
+Skriv commit-beskeder som en kort handling.
+
+**Gode eksempler:**
+
+```text
+opdater forside layout
+omskriv om mig sektion
+ret mobil spacing
+ryd op i galleri struktur
+tilføj komprimerede billeder
+opdater kodeguide
+```
+
+**Dårlige eksempler:**
+
+```text
+update
+fix
+final
+ting
+ændringer
+test
+final2
+```
+
+Regler:
+
+- Skriv hvad der er ændret
+- Hold beskeden kort
+- Én commit bør så vidt muligt handle om én ting
+- Brug samme sprog gennem projektet
+- Undgå generiske beskeder
+- Undgå `final`, `final2`, `test` og lignende
+
+
+
+## 16. Review Rules
 
 Review bruges for at sikre, at koden følger projektets standard og kan overtages af andre.
 
@@ -550,6 +651,6 @@ Spørg:
 - Koden bryder eksisterende patterns
 - Koden er svær at læse uden forklaring
 
-## 15. Final Rule
+## 17. Final Rule
 
-> Hvis koden ikke er let at læse, skal den refactores.
+Hvis koden ikke er let at læse, skal den refactores.
