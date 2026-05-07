@@ -1,0 +1,208 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #e30613; /* Primær rød farve, knapper og vigtige ting */
+  --secondary: #ffd6d7; /* Sekundær, mindre vigtige ting og menu */
+  --accent: #e8f1f8; /* Komplimenter til rød for balance */
+
+  /* UI / baggrund */
+  --background: #ffffff;
+  --surface: #f8f8f8; /* Bruges inde i input felt */
+  --border: #dadada; /* Bruges ved chat og andre bokse som stroke primært */
+
+  /* Tekst */
+  --text-primary: #1d1d1b; /* primær tekst */
+  --text-muted: #6b6b6b; /* sekundær tekst / mindre tydeligt tekst */
+
+  --font-family: 'Open Sans', sans-serif;
+
+  --text-xl: 24px;
+  --text-lg: 16px;
+  --text-md: 14px;
+  --text-sm: 12px;
+
+  --font-regular: 400;
+  --font-semi: 500;
+  --font-bold: 600;
+
+  /* Spacing */
+  --space-sm: 8px; /* Små afstande: label til input, tekst til tekst */
+  --space-md: 16px; /* Standark afstand: mellem komponenter padding i cards osv. */
+  --space-lg: 24px; /* Store sektioner: mellem større blocks og mellem sektioner */
+
+  /* Linjehøjde */
+  --line-tight: 1.3; /* Bruges på overskrifter for at bruge mindst plads som muligt */
+  --line-normal: 1.5; /* Bruges til brødtekst for mere luft */
+}
+
+/* Typografi /*
+
+
+/* H1 - store overskrifter */
+h1 {
+  margin: 0 0 var(--space-sm);
+
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  line-height: var(--line-tight);
+
+  color: var(--text-primary);
+}
+
+/* H2 - sektioner / undertitler */
+h2 {
+  margin: 0 0 var(--space-sm);
+
+  font-size: var(--text-lg);
+  font-weight: var(--font-semi);
+  line-height: var(--line-tight);
+
+  color: var(--text-primary);
+}
+
+/* Normal tekst */
+p {
+  margin: 0 0 var(--space-md);
+
+  font-size: var(--text-md);
+  font-weight: var(--font-regular);
+  line-height: var(--line-normal);
+
+  color: var(--text-primary);
+}
+
+/* Lille / muted tekst */
+small {
+  font-size: var(--text-sm);
+  line-height: var(--line-normal);
+
+  color: var(--text-muted);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+
+  font-size: var(--text-md);
+  font-weight: var(--font-bold);
+  line-height: var(--line-normal);
+
+  text-decoration: none;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: #eee;
+}
+
+/* App */
+.app {
+  max-width: 375px;
+  margin: 40px auto;
+  background: var(--background);
+  padding: var(--space-md);
+}
+
+/* Sektioner */
+.section {
+  margin-bottom: var(--space-lg);
+}
+
+/* Typografi */
+.text-heading {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+.text-subheading {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.text-body {
+  font-size: var(--text-md);
+  color: var(--text-primary);
+}
+
+.text-muted {
+  font-size: var(--text-md);
+  color: var(--text-muted);
+}
+
+.text-link {
+  font-size: var(--text-md);
+  font-weight: var(--font-bold);
+  color: var(--primary);
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: var(--text-md);
+}
+
+/* Row */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-md);
+  color: var(--text-muted);
+}
+
+/* Link */
+.link {
+  font-size: var(--text-md);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Knap */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+}
+
+.btn:active {
+  background: var(--secondary);
+}
+
+/* Farvetekst */
+.color-list p {
+  margin-bottom: 6px;
+}
+
+.color-primary { color: var(--primary); }
+.color-secondary { color: var(--secondary); }
+.color-accent { color: var(--accent); }
+.color-text { color: var(--text-primary); }
+.color-border { color: var(--border); }
+.color-background { color: var(--background); }
