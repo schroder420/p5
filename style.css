@@ -104,10 +104,12 @@ body {
 
 /* App */
 .app {
-  max-width: 375px;
-  margin: 40px auto;
-  background: var(--background);
-  padding: var(--space-md);
+    width: 100%;
+    max-width: 768px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--background);
+    padding: var(--space-md);
 }
 
 /* Sektioner */
@@ -206,3 +208,7 @@ body {
 .color-text { color: var(--text-primary); }
 .color-border { color: var(--border); }
 .color-background { color: var(--background); }
+
+/* Forside 
+_________________________________________*/
+
