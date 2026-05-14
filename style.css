@@ -405,6 +405,22 @@ _________________________________________*/
     margin-bottom: var(--space-sm);
 }
 
+.stars{
+
+    display:flex;
+
+    gap:4px;
+}
+
+
+.stars img{
+
+    width:16px;
+
+    height:16px;
+
+    object-fit:contain;
+}
 
 /* større iPad */
 
