@@ -55,7 +55,7 @@ h2 {
   margin: 0 0 var(--space-sm);
 
   font-size: var(--text-lg);
-  font-weight: var(--font-semi);
+  font-weight: var(--font-bold);
   line-height: var(--line-tight);
 
   color: var(--text-primary);
@@ -89,6 +89,28 @@ a {
   line-height: var(--line-normal);
 
   text-decoration: none;
+}
+
+/* Hvid overskrift (i billeder) */
+H3 {
+  margin: 0 0 var(--space-sm);
+
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  line-height: var(--line-tight);
+
+  color: var(--accent);
+}
+
+/* Hvid overskrift (i billeder) */
+H4 {
+  margin: 0 0 var(--space-sm);
+
+  font-size: var(--text-md);
+  font-weight: var(--font-semi);
+  line-height: var(--line-tight);
+
+  color: var(--accent);
 }
 
 /* Base */
@@ -212,3 +234,186 @@ body {
 /* Forside 
 _________________________________________*/
 
+/* Logo */
+
+.app-header{
+    display:flex;
+    justify-content:center;
+    margin: var(--space-lg);
+}
+
+.app-logo{
+    width:180px;
+}
+
+
+
+/* HERO */
+
+.hero-swiper{
+
+    width:100%;
+
+    height:240px;
+
+    margin-bottom: var(--space-md);
+
+    position:relative;
+}
+
+
+.hero-slide{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    transition:.4s;
+}
+
+
+.hero-slide.active{
+
+    opacity:1;
+}
+
+
+.hero-slide::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+      background:
+    linear-gradient(
+    to top,
+    rgba(0,0,0,.8),
+    transparent
+    );
+}
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    padding: var(--space-md);
+
+    color:white;
+}
+
+
+.hero-content h2{
+
+    margin-bottom: var(--space-sm);
+}
+
+
+
+/* Prikker */
+
+.slider-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap: var(--space-sm);
+
+    margin-bottom: var(--space-xl);
+}
+
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    background:#ccc;
+
+    cursor:pointer;
+}
+
+
+.dot.active{
+
+    background: var(--primary);
+}
+
+
+
+/* REVIEWS */
+
+.reviews h2{
+    margin-bottom: var(--space-xl);
+}
+
+.review-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(
+    auto-fit,
+    minmax(220px,1fr)
+    );
+
+    gap: var(--space-lg);
+}
+
+
+.review-card{
+
+    width:100%;
+}
+
+
+.review-card img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin-bottom: var(--space-sm);
+
+}
+
+
+.review-card h3{
+
+    margin-bottom: var(--space-sm);
+}
+
+
+/* større iPad */
+
+@media(min-width:768px){
+
+.hero-swiper{
+
+height:400px;
+
+}
+
+}
