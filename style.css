@@ -433,3 +433,289 @@ height:400px;
 }
 
 }
+
+
+/* Profil side
+_________________________________________*/
+
+/* Profil header */
+
+.profil-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap: var(--space-md);
+
+    padding: var(--space-md) 0;
+
+    margin-bottom: var(--space-md);
+}
+
+
+.profil-avatar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.profil-avatar img{
+    
+    width:56px;
+
+    height:56px;
+}
+
+.profil-name{
+    margin-bottom:4px;
+}
+
+
+.link{
+    display:block;
+    margin-bottom: var(--space-md);
+}
+
+
+
+/* Købsrejse */
+
+.journey-card{
+
+    padding: var(--space-md);
+
+    margin-bottom: var(--space-md);
+
+    border:1px solid var(--border);
+
+    background: var(--surface);
+}
+
+
+.journey-card-subtitle{
+    margin-bottom:0;
+    color: var(--text-muted);
+}
+
+
+.journey-progress{
+
+    display:flex;
+
+    align-items:center;
+
+    padding:40px 0;
+}
+
+
+.journey-step{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.journey-step + .journey-step::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:-50%;
+
+    width:100%;
+
+    height:2px;
+
+    background: var(--border);
+
+    transform:translateY(-50%);
+
+    z-index:0;
+}
+
+
+.journey-step--done + .journey-step::before{
+    background: var(--primary);
+}
+
+
+.journey-step-dot{
+
+    position:relative;
+
+    z-index:1;
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background: var(--border);
+}
+
+
+.journey-step--done .journey-step-dot{
+    background: var(--primary);
+}
+
+
+.journey-step--active .journey-step-dot{
+
+    background: var(--primary);
+
+    box-shadow:0 0 0 4px var(--secondary);
+}
+
+
+.journey-step-label{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size: var(--text-sm);
+
+    color: var(--text-muted);
+
+    white-space:nowrap;
+
+    text-align:center;
+}
+
+
+.journey-step-label--above{
+    bottom:calc(100% + 8px);
+}
+
+
+.journey-step-label--below{
+    top:calc(100% + 8px);
+}
+
+
+.journey-step--active .journey-step-label{
+    color: var(--text-primary);
+    font-weight: var(--font-bold);
+}
+
+
+
+/* Næste møde */
+
+.meeting-card{
+
+    padding: var(--space-md);
+
+    border:1px solid var(--border);
+
+    background: var(--surface);
+}
+
+
+.meeting-card-subtitle{
+    margin-bottom: var(--space-sm);
+    color: var(--text-muted);
+}
+
+
+.meeting-date{
+    margin-bottom: var(--space-md);
+    font-weight: var(--font-bold);
+}
+
+
+/* Chat side
+_________________________________________*/
+
+.page--chat{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:calc(100vh - var(--space-md) * 2);
+}
+
+
+.chat-messages{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding: var(--space-md) 0;
+}
+
+
+.chat-input-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap: var(--space-sm);
+
+    padding: var(--space-sm) 0;
+}
+
+
+.chat-input{
+
+    flex:1;
+
+    padding:10px var(--space-md);
+
+    border:1px solid var(--border);
+
+    background: var(--surface);
+
+    border-radius:20px;
+
+    font-size: var(--text-md);
+}
+
+
+.chat-send-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background: var(--primary);
+
+    cursor:pointer;
+}
+
+
