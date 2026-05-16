@@ -231,6 +231,76 @@ body {
 .color-border { color: var(--border); }
 .color-background { color: var(--background); }
 
+
+
+
+/* Navbar
+_________________________________________*/
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    position:fixed;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+
+    max-width:768px;
+
+    height:60px;
+
+    border-top:1px solid var(--border);
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+}
+
+
+.navbar-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:1;
+
+    height:100%;
+}
+
+
+.navbar-icon{
+
+    width:30px;
+
+    height:30px;
+
+    opacity:.35;
+
+    filter:drop-shadow(0 0 1px rgba(29,29,27,.5));
+}
+
+.navbar-icon--active{
+
+    filter:invert(13%) sepia(94%) saturate(6745%) hue-rotate(1deg) brightness(93%) contrast(112%);
+}
+
+
+
 /* Forside 
 _________________________________________*/
 
