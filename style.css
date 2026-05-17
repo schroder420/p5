@@ -786,4 +786,114 @@ _________________________________________*/
     cursor:pointer;
 }
 
+/* Vidensbasen
+_________________________________________*/
+
+.knowledgebase-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom: var(--space-lg);
+}
+
+
+.knowledgebase-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap: var(--space-sm);
+}
+
+
+
+/* Ikon knapper */
+
+.knowledgebase-icon-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:36px;
+
+    height:36px;
+
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+}
+
+
+.knowledgebase-icon-btn img{
+
+    width:22px;
+
+    height:22px;
+
+    object-fit:contain;
+}
+
+
+
+/* Grid */
+
+.knowledgebase-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap: var(--space-md);
+
+    padding-bottom:100px;
+}
+
+
+
+/* Cards */
+
+.knowledge-card{
+
+    width:100%;
+}
+
+
+.knowledge-card img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin-bottom: var(--space-sm);
+}
+
+
+.knowledge-card-content h2{
+
+    margin-bottom:4px;
+}
+
+
+.knowledge-card-content p{
+
+    margin:0;
+
+    line-height:1.4;
+}
 
