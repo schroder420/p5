@@ -285,7 +285,7 @@ _________________________________________*/
 
     height:60px;
 
-    background:rgba(255,255,255,.75);
+    background:rgba(240,240,240,.75);
 
     backdrop-filter:blur(12px);
 
@@ -313,14 +313,14 @@ _________________________________________*/
 
     height:30px;
 
-    opacity:.35;
+    opacity:1;
 
-    filter:drop-shadow(0 0 1px rgba(29,29,27,.5));
+    filter:drop-shadow(0 0 1px rgba(29,29,27,.2));
 }
 
 .navbar-icon--active{
 
-    filter:invert(13%) sepia(94%) saturate(6745%) hue-rotate(1deg) brightness(93%) contrast(112%);
+    filter:brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(6000%) hue-rotate(356deg) brightness(95%);
 }
 
 
