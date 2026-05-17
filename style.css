@@ -233,6 +233,32 @@ body {
 
 
 
+/* Tilbageknap
+____________________ */
+
+
+.back-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    width:32px;
+
+    height:32px;
+
+    margin-bottom: var(--space-sm);
+}
+
+
+.back-btn img{
+
+    width:20px;
+
+    height:20px;
+
+    object-fit:contain;
+}
 
 /* Navbar
 _________________________________________*/
