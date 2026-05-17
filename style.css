@@ -1162,3 +1162,135 @@ _________________________________________*/
 
     color: var(--text-muted);
 }
+
+/* Login side
+_________________________________________*/
+
+.login-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:100vh;
+}
+
+
+
+/* Content */
+
+.login-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+
+.login-subtitle{
+
+    margin-bottom:48px;
+
+    color: var(--text-muted);
+}
+
+
+
+/* Form */
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+}
+
+
+
+/* Labels */
+
+.login-label{
+
+    margin-bottom:6px;
+
+    font-size: var(--text-md);
+
+    color: var(--text-muted);
+}
+
+
+
+/* Inputs */
+
+.login-input{
+
+    width:100%;
+
+    height:50px;
+
+    padding:0 18px;
+
+    margin-bottom: var(--space-md);
+
+    border:1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--text-primary);
+
+    outline:none;
+}
+
+
+.login-input::placeholder{
+
+    color: var(--text-muted);
+    font-size: var(--text-md);
+}
+
+
+.password-wrapper{
+
+    position:relative;
+}
+
+
+.login-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:4px;
+
+    margin-bottom:auto;
+}
+
+
+
+.checkbox{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size: var(--text-md);
+
+    color: var(--text-muted);
+}
+
+
+.checkbox input{
+
+    width:18px;
+
+    height:18px;
+}
