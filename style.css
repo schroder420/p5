@@ -207,7 +207,7 @@ body {
 /* Knap */
 .btn {
   width: 100%;
-  padding: 14px;
+  padding: var(--space-md);
   border: none;
   background: var(--primary);
   color: white;
@@ -1280,7 +1280,7 @@ _________________________________________*/
 
     align-items:center;
 
-    gap:8px;
+    gap:var(--space-sm);
 
     font-size: var(--text-md);
 
@@ -1290,7 +1290,20 @@ _________________________________________*/
 
 .checkbox input{
 
-    width:18px;
+    width: var(--space-md);
 
-    height:18px;
+    height:var(--space-md);
+}
+
+.loginBtn {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  padding: var(--space-md);
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
 }
