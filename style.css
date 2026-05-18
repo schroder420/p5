@@ -273,6 +273,8 @@ _________________________________________*/
     align-items:center;
 
     position:fixed;
+    
+    padding-bottom: 15px;
 
     bottom:0;
 
@@ -284,7 +286,7 @@ _________________________________________*/
 
     max-width:768px;
 
-    height:60px;
+    height:75px;
 
     background:rgba(240,240,240,.75);
 
