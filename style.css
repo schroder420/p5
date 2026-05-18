@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --primary: #e30613; /* Primær rød farve, knapper og vigtige ting */
+  --primary: q; /* Primær rød farve, knapper og vigtige ting */
   --secondary: #ffd6d7; /* Sekundær, mindre vigtige ting og menu */
   --accent: #e8f1f8; /* Komplimenter til rød for balance */
 
@@ -318,10 +318,6 @@ _________________________________________*/
     filter:drop-shadow(0 0 1px rgba(29,29,27,.2));
 }
 
-.navbar-icon--active{
-
-    filter:brightness(0) saturate(100%) invert(12%) sepia(100%) saturate(6000%) hue-rotate(356deg) brightness(95%);
-}
 
 
 
