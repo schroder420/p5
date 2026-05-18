@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --primary: q; /* Primær rød farve, knapper og vigtige ting */
+  --primary: #e30613; /* Primær rød farve, knapper og vigtige ting */
   --secondary: #ffd6d7; /* Sekundær, mindre vigtige ting og menu */
   --accent: #e8f1f8; /* Komplimenter til rød for balance */
 
